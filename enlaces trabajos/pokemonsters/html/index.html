@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <head>
+        <title>PKM</title>
+        <style>
+            img{
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            h1{
+                color: aliceblue;
+                position: fixed;
+                top: 10%;
+                left: 50%;
+                transform: translate(-60%,-10%);
+                font-size: 150%;
+                font-family: PKMFont;
+            }
+            @font-face {
+               font-family: PKMFont;
+                src: url(../resources/Pokemon_Classic.ttf);
+            }   
+        </style>
+    </head>
+
+    <body style="background-color:#1e5129;">
+        <h1>¡ Clicka en una pokeball !</h1>
+        <audio id="pkm_bg" controls="controls" hidden autoplay><source src="../resources/LITTLEROOT_TOWN_Arrangement.ogg" type="audio/ogg">
+        </audio>
+            <script>
+                var audio = document.getElementById("pkm_bg");
+                audio.volume = 0.2;
+            </script>
+        <script src="../java/imageMapResizer.min.js"></script>
+        <img src="../img/grass.png" width="90%">
+        <img src="../img/mochila2.png" usemap="#mochila" width="85%">
+
+        <map name="mochila">
+            <area target="" alt="p_left" title="Treecko" href="p1.html" coords="565,599,79" shape="circle">
+            <area target="" alt="p_middle" title="Mudkip" href="p2.html" coords="963,736,78" shape="circle">
+            <area target="" alt="p_right" title="Torchic" href="p3.html" coords="1365,601,78" shape="circle">
+        </map>
+        <script>
+        imageMapResize();
+    </script>
+    </body>
+</html>

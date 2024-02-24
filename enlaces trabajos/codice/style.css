@@ -1,0 +1,179 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body{
+	min-height: 100vh;
+	background-image: url("custom.png");
+	background-color: #101215;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.fade{
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	text-align:justify;
+	background-image: linear-gradient(
+		transparent 19%,
+		#ed1b1b 25%,
+		#921616 50%,
+		transparent 87%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+
+.fade p {
+	line-height: 1.25;
+	padding-top: 23%;
+	font-size: 20px;
+	color: transparent;
+	z-index: 4;
+}
+
+h1 {
+	font-size: 50px;
+	position: fixed;
+	top: 8%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	font-family: 'Times New Roman', Times, serif;
+	background: linear-gradient(
+		#d80d0d 0%,
+		#500707 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+dl{
+	position: fixed;
+	top: 20%;
+	left: 11%;
+}
+
+dt{
+	color: red;
+	text-align: center;
+	margin-top:40px;
+	margin-bottom: 5px;
+}
+
+table{
+	width: 50%;
+	color:#d80d0d;
+	font-size: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+td{
+	text-align: center;
+	width: 30%;
+	padding-bottom: 40px;
+}
+
+a:link{
+	color:#ed1b1b;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited{
+	color:#5e1717;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+ul{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+li{
+	text-align: center;
+	font-size: 35px;
+	padding: 55px;
+
+}
+
+ul.no-bullets {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+
+h2 {
+	font-style: italic;
+	font-size: 23px;
+	position: fixed;
+	top: 16%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	font-family: 'Times New Roman', Times, serif;
+	color: #a41111;
+}
+  .fog {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: #fff;
+  }
+  
+  .fog-container {
+	top: 0%;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -2;
+  }
+  
+  .fog-img {
+	position: absolute;
+	height: 100vh;
+	width: 300vw;
+	z-index: -1;
+  }
+  
+  .fog-img-first {
+	background: url("fog-1.png");
+	background-repeat: repeat-x;
+	background-size: contain;
+	background-position: center;
+	animation: marquee 150s linear infinite;
+  }
+
+  .fog-img-second {
+	background: url("fog-2.png");
+	opacity: 0.5;
+	background-repeat: repeat-x;
+	background-size: contain;
+	background-position: center;
+	animation: marquee 180s linear infinite;
+  }
+
+  @keyframes marquee {
+	0% {
+	  transform: translate3d(0, 0, 0);
+	}
+  
+	100% {
+	  transform: translate3d(-200vw, 0, 0);
+	}
+  }
+  

@@ -1,0 +1,369 @@
+html, body{
+    overflow: hidden;
+    height: 100%;
+    background-color:#010100;
+    font-family: SpotifyM;
+}
+p{
+  margin:0;
+}
+
+button{
+  font-family: SpotifyM;
+}
+
+@font-face {
+  font-family: SpotifyM;
+  src: url(../resources/spotify.ttf);
+}
+
+.grid-container {
+    position: relative;
+    display: grid;
+    height: 98%;
+    width: 100%;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 307px 75fr;
+    gap: 8px;
+    background-color: transparent;
+}
+
+.grid-container > div {
+  background-color: transparent;
+  gap: 10px;
+}
+
+.item1A{
+  border-radius: 10px;
+  background-color: #121212;
+  height: 16.5%;
+  margin-bottom: 8px;
+}
+
+.item1B{
+  border-radius: 10px;
+  background-color: #121212;
+  height: calc(76.5% - 8px);
+}
+
+
+.grid-spotbottom {
+  position: fixed;
+  display: grid;
+  background: linear-gradient(to right,#af2996, #519af5);
+  height: 6.5%;
+  width: 99%;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 75fr 25fr;
+  top:93%;
+  color: #e6e6e7;
+}
+
+.grid-spotbottom p {
+  padding: 15px 0px 0px 15px;
+  font-size: 14px ;
+}
+
+.grid-spotbottom button{
+  margin: 8px 50px 0px 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  background-color: #fefffe;
+  color: #010100;
+  float:inline-end;
+}
+
+.grid-main {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 93%;
+  grid-auto-rows: 1fr;
+  grid-template-rows: 7fr 36fr 28fr 29fr;
+  background-color: #131213;
+  border-radius: 10px;
+}
+
+.item2A {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 4fr 4fr 82fr 10fr;
+  color: white;
+  background-color: #121212;
+  border-radius:10px;
+}
+
+.item2B{
+  background: linear-gradient(to bottom,#282424 1%,#131213 100%);
+}
+
+.item2D{
+  color: #919091;
+  font-size: 13px;
+  position: relative;
+  top: 30%;
+  left: 1%;
+}
+
+.grid-canciones {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: calc(100%-40px);
+  grid-auto-columns: 1fr;
+  grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
+  border-radius: 10px;
+}
+
+.grid-canciones > div{
+  border-radius: 10px;
+  padding: 0px 0px 0px 0px;
+}
+
+.chart{
+  position: relative;
+  display: grid;
+  width: 90%;
+  height: calc(100%-20px);
+  grid-auto-rows: 1fr;
+  grid-template-rows: 75fr 25fr;
+  background-color: #272627;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.imgchart{
+  width: 100%;
+  height:100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+}
+
+.songcover{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  margin: 10px 0px 30px 0px;
+}
+
+.chart h3, .chart p{
+  position: relative;
+  left: 10%;
+  margin: 0;
+  color: #e6e6e7;
+}
+
+.chart p{
+  color:#9c9d9d;
+}
+
+.movimiento{
+  position: relative;
+  border-radius: 100%;
+  height: 33px;
+  width: 33px;
+  border: none;
+  background-color: #080809;
+  color: #919091;
+  top: 50%;
+  transform: translate(0,-50%);
+  margin: 0px 3px 0px 3px;
+}
+
+.item1A  .opcion{
+  height: 33%;
+  color: #808081;
+  stroke: #808081;
+}
+
+.item1B .opcion{
+  height: 8%;
+  color: #808081;
+  stroke: #808081;
+}
+
+.opcion:hover{
+  color: #e6e6e7;
+  stroke:#e6e6e7;
+  transition:0.7s;
+}
+
+.texto{
+  position:relative;
+  height: 100%;
+  width: 85%;
+  left: 15%;
+}
+
+.texto p{
+  position: relative;
+  top: 50%;
+  left: -15%;
+  transform: translate(0,-50%);
+}
+
+.texto button{
+  border-radius: 999px;
+  background-color: transparent;
+  border: none;
+  color: #808081;
+  font-size: 25px;
+  width: 35px;
+  height: 35px;
+}
+
+.texto button:hover{
+  background-color:#171717;
+  color: #e6e6e7;
+}
+
+.logo{
+  margin-left: 25px;
+  height: 120%;
+  width: 35%;
+}
+
+.icon{
+  margin-left: 5px;
+  float: left;
+  height: 100%;
+  width: 15%;
+}
+
+.icon svg{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.item1A a:link{
+  text-decoration: none;
+  color: #808081;
+}
+
+.item1A a:active{
+  text-decoration: none;
+  color: #808081;
+}
+
+.item1A a{
+  text-decoration: none;
+  color: #808081;
+}
+
+.item1A a:visited{
+  text-decoration: none;
+  color: #808081;
+}
+
+.col1contenido{
+  border-radius: 10px;
+  background-color: #252524;
+  margin: 0 10px 25px 10px;
+}
+
+.contenidotitulo{
+  padding: 15px 15px 0;
+  color:#edeced;
+}
+
+.contenidotexto{
+  padding: 15px 15px 15px;
+  color:#efefee;
+  font-size: 13px;
+}
+
+.contenidobutton{
+  margin: 10px 15px 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 13px 8px;
+  font-size: 13px;
+  background-color: #fefffe;
+  color: #010100;
+}
+
+.contenidobutton:hover{
+  margin: 8px 15px 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 13px 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.col1foot{
+  position: relative;
+  background-color: transparent;
+  height: 46%;
+}
+
+.containerfoot {
+  padding: 50px 20px 0px 20px;
+  height: calc(70% - 50px);
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: auto;
+}
+
+.containerfoot > div {
+  font-size: 13px;
+  color: #e6e6e7;
+}
+
+.item1B a:link{
+  text-decoration: none;
+}
+
+.item1B a:active{
+  text-decoration: none;
+  color: #808081;
+}
+
+.item1B a:visited{
+  text-decoration: none;
+  color: #808081;
+}
+
+.idioma{
+  margin-top: 20px;
+  position: relative;
+  height: calc(20% - 20px);
+}
+
+.idioma button{
+  position: relative;
+  border-radius: 50px;
+  top: 30%;
+  left: 20px;
+  transform: translate(0,-50%);
+  background-color: transparent;
+  border: 1px #fefffe solid;
+}
+ .foottabla{
+  margin-left: 30px;
+  position: relative;
+  top: 100%;
+  transform: translate(0,-100%);
+  table-layout: fixed;
+  color:#9c9d9d;
+ }
+
+ .foottabla td{
+  width: 180px;
+  text-align: left;
+ }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Treecko</title>
+        <style>
+        .div1{
+            box-sizing: border-box;
+            outline:ridge 6px;
+            outline-color: rgb(128, 0, 0);
+            border-radius: 12px;
+            outline-offset: 30px;
+        }
+        .div2{
+            box-sizing: border-box;
+            outline: solid;
+            outline-color: rgb(55, 55, 55);
+            border:solid 4px;
+            border-color: rgb(102, 22, 22);
+            border-radius: 12px;
+            background-color: rgb(176, 17, 17);
+            color: white;
+        }
+        </style>
+    </head>
+
+    <body>
+        <audio id="pkm_bg" controls="controls" hidden autoplay loop><source src="../resources/1-09 Wild Pokémon Defeated!.mp3" type="audio/ogg">
+        </audio>
+            <script>
+                var audio = document.getElementById("pkm_bg");
+                audio.volume = 0.2;
+            </script>
+        <div class="square1">
+            <table>
+                <tr>
+                    <td rowspan="4" style="background-color: lightgrey; width: 22%;"><img src="../img/Torchic.png" width="70%"></td>
+                    <td style="background-color: lightgrey; text-align: right; padding-right:3%;">Nº 255</td>
+                    <td style="background-color: lightgrey;">Torchic</td>
+                    <td style="text-align: center;"><a href="index.html">&nbsp;BACK</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="padding-left: 15%;">Polluelo</td>
+                </tr>
+                <tr>
+                    <td style="width: 25%; text-align: right; padding-right:3%;">Altura</td>
+                    <td>0,4 m</td>
+                    <td style="text-align: center;">Tipo:</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right; padding-right:3%;">Peso</td>
+                    <td>2,5 kg</td>
+                    <td style="background-color: lightgrey; text-align: center;"><a class="div2">&nbsp;FUEGO&nbsp;</a></td>
+                </tr>
+                <tr style="height: 50%; text-align: left;">
+                    <td colspan="4" style="padding: 9%;"><div class="div1">Torchic no se separa de su Entrenador. Siempre va tras él con sus pasitos inseguros.<br>Este Pokémon escupe bolas de fuego que pueden alcanzar los 1000 °C y carbonizar al enemigo.</div></td>
+                </tr>
+            </table>
+        </div>
+        
+
+    </body>
+</html>

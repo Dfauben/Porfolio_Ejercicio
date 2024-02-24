@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #070e1c;
+}
+
+/*
+th, td{
+    border: solid;
+}*/
+
+@font-face{
+    font-family: Eleganteklk;
+    src: url(../resources/Cashrole.otf);
+}
+
+.headerlogo{
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.header h1{
+    font-family: Eleganteklk;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #0c1a38; 
+  border-radius: 15px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #0b1731;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 18px;
+  z-index: 1;
+}
+
+.subnav-content a {
+  background-color: #0b1731;
+  width: 250px;
+  height: 60px;
+  float: left;
+  color: white;
+  text-decoration: none;
+  fill: white;
+  text-align: left;
+  border-radius: 10px;
+  border: solid #142242;
+}
+
+.subnav-content a:hover{
+  background-color: #eee;
+  color: black;
+  fill:black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+
+.grid-container {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  position: relative;
+  min-height: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end:5;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  height: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.cuerpoimg {
+  background-color:rgb(17, 17, 65);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.cuerpoimg iframe{
+  border-radius: 20px;
+}
+
+.card {
+  background-color: #1928485f;
+  padding: 20px;
+  margin: 10px;
+  color:white;
+  border-radius: 50px;
+}
+
+.card .cuerpoimg{
+  margin-bottom: 10px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer table a:visited:hover{
+  color:rgb(71, 144, 247);
+}
+
+.footer table a:hover{
+  color:rgb(71, 144, 247);
+}
+
+.footer table td a:link{
+  text-decoration: none;
+  color:white;
+}
+
+.footer table td a:active{
+  text-decoration: none;
+  color:white;
+}
+
+.footer table td a:visited{
+  text-decoration: none;
+  color:white;
+}
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+th{
+  width: 230px;
+  height: 50px;
+}
+
+.tarjeta{
+  background-color: rgba(255, 255, 255, 0.795);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  z-index: 6;
+}
+
+.botones{
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.boton1{
+  width: 50%;
+}
+
+.tarjeta button{
+  font-size: 20px;
+  width: 20%;
+  height: 50px;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%);
+}
+
+.flogos{
+  position: relative;
+  width: 383px;
+  bottom: 0%;
+  left: 100%;
+  transform: translate(-100%);
+  
+}
+.flogos td{
+    width: 45px;
+    height: 30px;
+}
+
+.logo1{
+    margin: 0px;
+  width: 25px;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%);
+  fill:white
+}
+
+.logo1:hover{
+    fill:rgb(71, 144, 247);
+}
+
+.logo2{
+  width: 30px;
+  filter:saturate(100%) brightness(90%);
+  margin: 10px;
+}
+
+.logo2:hover{
+  background-color: red;
+}
+
+.logo3{
+  stroke: none;
+  stroke-opacity: 1;
+  fill:white;
+  fill-opacity: 1;
+}
+
+.logo3:hover{
+  fill:red;
+}
+
+.card img {
+  border-radius: 20px;
+}
+
+.popular{
+  left:50%;
+  position: relative;
+  transform: translate(-50%);
+  width: 100%; 
+  height: 100%;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Treecko</title>
+        <style>
+        .div1{
+            box-sizing: border-box;
+            outline:ridge 6px;
+            outline-color: green;
+            border-radius: 12px;
+            outline-offset: 30px;
+        }
+        .div2{
+            box-sizing: border-box;
+            outline: solid;
+            outline-color: rgb(55, 55, 55);
+            border:solid 4px;
+            border-color: rgb(22, 102, 26);
+            border-radius: 12px;
+            background-color: rgb(17, 176, 17);
+            color: white;
+        }
+        </style>
+    </head>
+
+    <body>
+        <audio id="pkm_bg" controls="controls" hidden autoplay loop><source src="../resources/1-09 Wild Pokémon Defeated!.mp3" type="audio/ogg">
+        </audio>
+            <script>
+                var audio = document.getElementById("pkm_bg");
+                audio.volume = 0.2;
+            </script>
+        <div class="square1">
+            <table>
+                <tr>
+                    <td rowspan="4" style="background-color: lightgrey; width: 22%;"><img src="../img/treecko.png" width="100%"></td>
+                    <td style="background-color: lightgrey; text-align: right; padding-right:3%;">Nº 252</td>
+                    <td style="background-color: lightgrey;">Treecko</td>
+                    <td style="text-align: center;"><a href="index.html">&nbsp;BACK</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="padding-left: 15%;">Geco Bosque</td>
+                </tr>
+                <tr>
+                    <td style="width: 25%; text-align: right; padding-right:3%;">Altura</td>
+                    <td>0,5 m</td>
+                    <td style="text-align: center;">Tipo:</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right; padding-right:3%;">Peso</td>
+                    <td>5,0 kg</td>
+                    <td style="background-color: lightgrey; text-align: center;"><a class="div2">&nbsp;PLANTA&nbsp;</a></td>
+                </tr>
+                <tr style="height: 50%; text-align: left;">
+                    <td colspan="4" style="padding: 9%;"><div class="div1">Treecko tiene unos ganchos pequen&#771os en las plantas de los pies con los que puede escalar superficies verticales.<br>Este Pokémon ataca dando un golpetazo con la cola.</div></td>
+                </tr>
+            </table>
+        </div>
+        
+
+    </body>
+</html>

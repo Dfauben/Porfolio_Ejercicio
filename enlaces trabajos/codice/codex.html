@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Señor de la noche</title>
+
+	</head>
+
+    <body>
+        <h1>El Códice</h1>
+        <audio controls autoplay id="horroraudio" hidden>
+			<source src="music.ogg" type="audio/ogg">
+		</audio>
+
+		<script>
+			var audio = document.getElementById("horroraudio");
+			audio.volume = 0.3;
+		  </script>
+        <ul class="no-bullets">
+            <li><a href="content.html">La Noche Oscura</a></li>
+            <li><a href="content2.html">El último recurso...</a></li>
+            <li><a href="Index.html">Olvidar...</a></li>
+        </ul>
+        <div class="fog-container">
+            <div class="fog-img fog-img-first"></div>
+            <div class="fog-img fog-img-second"></div>
+          </div>
+    </body>
+    </html>
